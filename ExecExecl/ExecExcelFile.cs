@@ -51,11 +51,16 @@ namespace ExecExecl
 
                     foreach (ExcelWorksheet worksheet in worksheets)
                     {
+                        if (worksheet.Dimension == null)
+                        {
+                            continue;
+                        }
+
                         int rowIndex = 3;
 
                         int rowCount = worksheet.Cells.Rows;
                         //获得有数据的区域
-                        var lastAddress = worksheet.Dimension.Address;
+                        //var lastAddress = worksheet.Dimension.Address;
                         //获得有数据的区域最上且最左的单元格
                         //var startCell = worksheet.Dimension.Start.Address;
                         //获得有数据的区域最下且最右的单元格

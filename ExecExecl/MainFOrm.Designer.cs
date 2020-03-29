@@ -69,7 +69,6 @@
             this.txtSourceFile.Name = "txtSourceFile";
             this.txtSourceFile.Size = new System.Drawing.Size(589, 21);
             this.txtSourceFile.TabIndex = 1;
-            this.txtSourceFile.Text = "C:\\Users\\lang\\Desktop\\积分统计11.xlsx";
             // 
             // label1
             // 
